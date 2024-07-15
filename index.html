@@ -1,86 +1,102 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Gsap Parallax</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.2/ScrollTrigger.min.js"></script>
+  </head>
 
-    <script src="main.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/animation.gsap.js"></script>
-</head>
-
-<body>
-
+  <body>
     <section id="first-section">
-        <nav>
-            <div class="nav-wrapper">
-                <h4>lorem ipsum </h4>
-                <a href="#" class="button">Sign up</a>
-            </div>
-        </nav>
-        <div class="container">
-            <div class="title">PARALLAX</div>
-            <div class="images">
-                <div class="image-wrapper" id="first"><img src="img/7.png" alt=""></div>
-                <!-- <div class="image-wrapper" id="second"><img src="img/5.png" alt=""></div> -->
-                <div class="image-wrapper" id="third"><img src="img/4.png" alt=""></div>
-                <div class="image-wrapper" id="forth"><img src="img/3.png" alt=""></div>
-                <!-- <div class="image-wrapper" id="fifth"><img src="img/2.png" alt=""></div> -->
-                <div class="image-wrapper" id="sixth"><img src="img/1.png" alt=""></div>
-                <div class="blur"></div>
-            </div>
-
-            <footer>
-                <div class="footer-wrapper">
-                    <ul>
-                        <li>Instagram</li>
-                        <li>Facebook</li>
-                        <li>Facebook</li>
-                        <li>Twitter</li>
-                    </ul>
-                </div>
-            </footer>
-
-            <div class="content">
-                <div class="content-wrapper">
-                    <div class="content-images">
-                        <div class="content-image-wrapper one">
-                            <img src="https://scontent.ftbs10-1.fna.fbcdn.net/v/t39.30808-6/369192072_6450770085013783_8882533980150905898_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=6ee11a&_nc_ohc=0sASFIadPHAQ7kNvgFCn9yn&_nc_ht=scontent.ftbs10-1.fna&oh=00_AYANuMHAd1dsqerfH8mA7qBNwmh-t6lZ712c_NDS745LNg&oe=66941222"
-                                alt="">
-                            <h4>W</h4>
-                        </div>
-                        <div class="content-image-wrapper two">
-                            <img src="https://scontent.ftbs10-1.fna.fbcdn.net/v/t39.30808-6/369192072_6450770085013783_8882533980150905898_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=6ee11a&_nc_ohc=0sASFIadPHAQ7kNvgFCn9yn&_nc_ht=scontent.ftbs10-1.fna&oh=00_AYANuMHAd1dsqerfH8mA7qBNwmh-t6lZ712c_NDS745LNg&oe=66941222"
-                                alt="">
-                            <h4>E</h4>
-                        </div>
-                        <div class="content-image-wrapper three">
-                            <img src="https://scontent.ftbs10-1.fna.fbcdn.net/v/t39.30808-6/369192072_6450770085013783_8882533980150905898_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=6ee11a&_nc_ohc=0sASFIadPHAQ7kNvgFCn9yn&_nc_ht=scontent.ftbs10-1.fna&oh=00_AYANuMHAd1dsqerfH8mA7qBNwmh-t6lZ712c_NDS745LNg&oe=66941222"
-                                alt="">
-                            <h4>S</h4>
-                        </div>
-                        <div class="content-image-wrapper four">
-                            <img src="https://scontent.ftbs10-1.fna.fbcdn.net/v/t39.30808-6/369192072_6450770085013783_8882533980150905898_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=6ee11a&_nc_ohc=0sASFIadPHAQ7kNvgFCn9yn&_nc_ht=scontent.ftbs10-1.fna&oh=00_AYANuMHAd1dsqerfH8mA7qBNwmh-t6lZ712c_NDS745LNg&oe=66941222"
-                                alt="">
-                            <h4>T</h4>
-                        </div>
-                    </div>
-                    <p class="text">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore quos aliquid neque, ipsa
-                        dolorum aut velit nihil illo sit quaerat. Eaque, optio! Harum optio, nostrum veniam iure earum,
-                        perspiciatis nobis veritatis sit ullam ipsam quisquam expedita sunt corporis voluptatibus sequi
-                        adipisci modi laudantium. Quidem officiis enim illum eos deserunt id.
-                    </p>
-                </div>
-            </div>
+      <nav>
+        <div class="nav-wrapper">
+          <h4>lorem ipsum</h4>
+          <a href="#" class="button">Sign up</a>
         </div>
+      </nav>
+      <div class="container">
+        <div class="title">PARALLAX</div>
+        <div class="images">
+          <div class="image-wrapper" id="first">
+            <img src="img/7.png" alt="" />
+          </div>
+          <div class="image-wrapper" id="second">
+            <img src="img/5.png" alt="" />
+          </div>
+          <div class="image-wrapper" id="third">
+            <img src="img/4.png" alt="" />
+          </div>
+          <div class="image-wrapper" id="forth">
+            <img src="img/3.png" alt="" />
+          </div>
+          <div class="image-wrapper" id="fifth">
+            <img src="img/2.png" alt="" />
+          </div>
+          <div class="image-wrapper" id="sixth">
+            <img src="img/1.png" alt="" />
+          </div>
+          <div class="blur"></div>
+        </div>
+
+        <footer>
+          <div class="footer-wrapper">
+            <ul>
+              <li>Instagram</li>
+              <li>Facebook</li>
+              <li>Facebook</li>
+              <li>Twitter</li>
+            </ul>
+          </div>
+        </footer>
+
+        <div class="content">
+          <div class="content-wrapper">
+            <div class="content-images">
+              <div class="content-image-wrapper one">
+                <img
+                  src="https://scontent.ftbs10-1.fna.fbcdn.net/v/t39.30808-6/369192072_6450770085013783_8882533980150905898_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=6ee11a&_nc_ohc=0sASFIadPHAQ7kNvgFCn9yn&_nc_ht=scontent.ftbs10-1.fna&oh=00_AYANuMHAd1dsqerfH8mA7qBNwmh-t6lZ712c_NDS745LNg&oe=66941222"
+                  alt=""
+                />
+                <h4>W</h4>
+              </div>
+              <div class="content-image-wrapper two">
+                <img
+                  src="https://scontent.ftbs10-1.fna.fbcdn.net/v/t39.30808-6/369192072_6450770085013783_8882533980150905898_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=6ee11a&_nc_ohc=0sASFIadPHAQ7kNvgFCn9yn&_nc_ht=scontent.ftbs10-1.fna&oh=00_AYANuMHAd1dsqerfH8mA7qBNwmh-t6lZ712c_NDS745LNg&oe=66941222"
+                  alt=""
+                />
+                <h4>E</h4>
+              </div>
+              <div class="content-image-wrapper three">
+                <img
+                  src="https://scontent.ftbs10-1.fna.fbcdn.net/v/t39.30808-6/369192072_6450770085013783_8882533980150905898_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=6ee11a&_nc_ohc=0sASFIadPHAQ7kNvgFCn9yn&_nc_ht=scontent.ftbs10-1.fna&oh=00_AYANuMHAd1dsqerfH8mA7qBNwmh-t6lZ712c_NDS745LNg&oe=66941222"
+                  alt=""
+                />
+                <h4>S</h4>
+              </div>
+              <div class="content-image-wrapper four">
+                <img
+                  src="https://scontent.ftbs10-1.fna.fbcdn.net/v/t39.30808-6/369192072_6450770085013783_8882533980150905898_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=6ee11a&_nc_ohc=0sASFIadPHAQ7kNvgFCn9yn&_nc_ht=scontent.ftbs10-1.fna&oh=00_AYANuMHAd1dsqerfH8mA7qBNwmh-t6lZ712c_NDS745LNg&oe=66941222"
+                  alt=""
+                />
+                <h4>T</h4>
+              </div>
+            </div>
+            <p class="text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore
+              quos aliquid neque, ipsa dolorum aut velit nihil illo sit quaerat.
+              Eaque, optio! Harum optio, nostrum veniam iure earum, perspiciatis
+              nobis veritatis sit ullam ipsam quisquam expedita sunt corporis
+              voluptatibus sequi adipisci modi laudantium. Quidem officiis enim
+              illum eos deserunt id.
+            </p>
+          </div>
+        </div>
+      </div>
     </section>
-
-</body>
-
+    <script src="main.js"></script>
+  </body>
 </html>
